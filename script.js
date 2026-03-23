@@ -1,4 +1,3 @@
-const API_KEY = '52f756f1193c5bf6b22f0d3ab20df39c';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 // Elements
