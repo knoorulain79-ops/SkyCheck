@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyCheck— Noorulain Khan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="header">
+    <h1>&#9729; SkyCheck</h1>;
+    <p>Search any city in the world</p>
+  </div>
+
+  <div class="search-box">
+    <input type="text" id="cityInput" placeholder="Enter city name e.g. Karachi" />
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div class="error" id="error">&#9888; City not found. Please try again.</div>
+
+  <div class="weather-card" id="weatherCard">
+    <div class="top">
+      <div class="city-info">
+        <div class="city-name" id="cityName">—</div>
+        <div class="country" id="country">—</div>
+        <div class="date" id="date">—</div>
+      </div>
+      <img class="weather-icon" id="weatherIcon" src="" alt="weather icon">
+    </div>
+
+    <div class="temp-section">
+      <div class="temp" id="temp">—</div>
+      <div class="description" id="description">—</div>
+      <div class="temp-range">
+        <span id="tempMin">—</span> / <span id="tempMax">—</span>
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="detail-box">
+        <span class="d-icon">&#128167;</span>
+        <div class="d-value" id="humidity">—</div>
+        <div class="d-label">Humidity</div>
+      </div>
+      <div class="detail-box">
+        <span class="d-icon">&#127788;</span>
+        <div class="d-value" id="wind">—</div>
+        <div class="d-label">Wind</div>
+      </div>
+      <div class="detail-box">
+        <span class="d-icon">&#127777;</span>
+        <div class="d-value" id="feelsLike">—</div>
+        <div class="d-label">Feels Like</div>
+      </div>
+      <div class="detail-box">
+        <span class="d-icon">&#128065;</span>
+        <div class="d-value" id="visibility">—</div>
+        <div class="d-label">Visibility</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="loader" id="loader">Fetching weather data...</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
